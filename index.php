@@ -7,11 +7,22 @@ $name = "Jual";
 echo isset($name); // 1 means true
 
 
-if (isset($name)){
+$null_var = null;
+
+if (isset($null_var)){
     echo "Hello";
 } else {
-    echo "Bye";
+    echo "Bye"; // output Bye
 }
 
+
+
+// Null Coalescing Operator
+
+$nill = null; 
+
+$actul_value = $nill ?? "something"; // jodi nill e value set kora na thake tahole somthing k add koro.
+
+echo $actul_value;
 
 ?>
